@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Soutien-2 #05</title>
+    <link href="./style.css" rel="stylesheet" />
+    <script type="text/javascript" src="./tools.js"></script>
+</head>
+
+<body>
+    <!-- rules and instructions -->
+    <div class="card instructions">
+        <p class="h6 font-weight-bold text-center">Quelques consignes générales</p>
+        <ul>
+            <li>faire les points dans l'ordre et ne passer au point suivant que lorsque le précédent est achevé
+                et testé,</li>
+            <li>utiliser la console autant que nécessaire Pour bien observer le contenu et le type des différentes variables,</li>
+            <li>écrire du code structuré et correctement indenté,</li>
+            <li>écrire du code <strong>largement documenté !</strong></li>
+            <li>l'ajout du code JavaScript est fait entre les balises &lt;script&gt;...&lt;script&gt; de ce fichiet html</li>
+        </ul>
+        <p>Eléments de départ fournis quel que soit l'exercice :</p>
+        <ul>
+            <li>ce fichier (soutien_xx.html) qui est un conteneur de l'exercice</li>
+            <li>un fichier de style CSS (style.css) déjà chargé via le header du document html</li>
+            <li>un fichier Javascript (tools.js), déjà chargé via le header du document html, contenant divers outils :
+                <ul>
+                    <li>une fonction d'affichage formatté d'un tableau (Array) à la fin du document html courant,</li>
+                    <li>une fonction d'affichage formatté d'un résultat à la fin du document html courant,</li>
+                    <li>une fonction de génération aléatoire d'un nombre entier compris entre 2 valeurs,</li>
+                    <li>une fonction de génération d'une série aléatoire de nombres entiers rangés dans un tableau de
+                        type Array,</li>
+                </ul>
+                L'utilisation de ces outils n'est pas systématiquement nécessaire (cela dépend des exercices). Par contre, 
+                <span class="text-danger">vous n'avez, en aucun cas, besoin</span> :
+                <ul>
+                    <li><span class="text-danger">de modifier le code</span> de ces outils,</li>
+                    <li><span class="text-danger">de copier le code</span> des fonctions contenues dans <em>tools.js</em> dans 
+                        votre propre code.<br>
+                        Si vous utilisez les fonctions outils, vous ne pouvez que les "appeler".</li>
+                </ul>
+                
+            </li>
+        </ul>
+        <h5 class="text-success text-center">Que la force soit avec vous !</h5>
+    </div>
+
+    <!-- subject -->
+    <div class="card subject">
+        <p class="h6 font-weight-bold text-center">Soutien-2 #05 - On monte dans les tours !</p>
+        <p>Repartir du code établi lors de l'exercice précédent (Soutien-2 #04) et faire évoluer le code de la 
+            fonction principale pour que le calcul réalisé par la fonction <code>cube</code> soit maintenant exécuté pour 
+            plusieurs valeurs <strong>allant de 1 en 1, depuis 1 jusqu'à la valeur saisie</strong> dans le champ du 
+            formulaire (cette valeur saisie doit être incluse dans le calcul).
+        </p>
+        <p>
+            Les résultats seront multiples ! Il faut donc les <strong>ranger dans un tableau</strong>.
+        </p>
+        <p>
+            Puisque le résultat attendu est maintenant un tableau, utiliser la fonction <code>displayArray</code> 
+            (donnée dans <em>tools.js</em>) pour afficher le résultat des calculs. 
+            Pour une utilisation correcte, bien lire le commentaire et la signature de cette fonction !
+        </p>
+    </div>
+
+    <!-- html input wrapper -->
+    <div class="card input">
+        <div class="formulaire">
+            <input type="text" id="number" size=20 placeholder="Un nombre entre 5 et 15">
+            <button type="button" class="btn btn-primary" onclick="go()">
+                Go !
+            </button>
+        </div>
+    </div>
+
+    <!-- html display area wrapper -->
+    <div class="card result" id="result">
+    </div>
+
+    <!-- javascript part -->
+    <script type="text/javascript">
+
+        // Your code here...
+
+    </script>
+</body>
+
+</html>
