@@ -35,7 +35,7 @@ function displayArray (tab) {
  */
 
 function displayResult (message, result) {
-    let element = document.getElementById ('result');
+    let element = document.getElementById('result');
     displayCard (element);
     let out = '<table class="display">\n<tr>\n<td>';
     out += (message + " " + result);

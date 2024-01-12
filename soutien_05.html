@@ -83,9 +83,29 @@
 
     <!-- javascript part -->
     <script type="text/javascript">
+        function cube(){
+            let number = document.getElementById("number").value;
+            let calculCube = 0;
+            if ((number >= 5) && (number <= 15)){
+                // on teste que le chiffre insérer soit compris entre 5 et 15
+                // et a partir de ce moment la si c'est bon on refait un if pour calculer l'exposant
+                if (number%2 == 0){
+                    // s'il est pair on calcule le carré du nombre
+                    calculCube = Math.pow(number,2);    
+                } else if (number%2 == 1){
+                    // si c'est impair on calcule le cube du nombre
+                    calculCube = Math.pow(number, 3);  
+                }   
+                return calculCube;
+                // important de retourner le résultat de notre calcul
+            } else {
+                alert("Le numéro est incorrect");
+            }
+        }
 
-        // Your code here...
-
+        function go(){
+            displayResult("Le résultat est", cube());
+        }
     </script>
 </body>
 

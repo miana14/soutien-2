@@ -88,16 +88,21 @@
         // Your code here...
 
         // Step 0: que faut-il écrire pour répondre à l'événement "onclick" ?
-        
+        function go(){
         // Step 1: récupérer la valeur saisie
-
+            let number = document.getElementById("number").value;
+            let calculCube = 0;
         // Step 2: tester la valeur saisie ; doit être un nombre valide entre 5 et 15
-
+            if ((number >= 5) && (number <= 15)){
         // Step 3: calculer le cube de la valeur saisie
-        // Pour rappel si on appele x la valeur saisie, son cube vaut x * x * x
-
+                calculCube = Math.pow(number,3);
+            } else {
+                alert("Le numéro est incorrect");
+            }
         // Step 4: Afficher le résultat en utilisant la fonction displayResult 
-
+            displayResult("Le résultat est",calculCube);
+        }
+        // Pour rappel si on appele x la valeur saisie, son cube vaut x * x * x
     </script>
 </body>
 

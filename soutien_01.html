@@ -83,9 +83,46 @@
 
     <!-- javascript part -->
     <script type="text/javascript">
+        function hello(a,b){
+            return(2* a) - b;
+        }
 
-        // Your code here...
+        function hi (a) {
+            return (a * a) % 3;
+        }
+        
+        //Q1- a et b sont des parametres de la function (hello)
 
+        /*Q2- resultOne récupère la fonction hello et ses arguments. 
+        *2 et 3 sont les paramètres des arguments de la fonction hello.
+        *resultOne vaut 1. (je m'étais trompé la 1ere fois en remplacant le "a" par la fonction hi())
+        */
+
+        //Q3- la fonction hi() n'a qu'un argument = (a), dedans elle dedans elle stocke un calcul.
+
+        //Q4- resultTwo vaut 5.3333333.
+
+        //Q5- resultThree vaut 1.33333.
+
+        //Q6- resultFour vaut 12.6.
+
+        /*Q7- 
+        *resultOne = hello((2*2)-3) 
+        -> hello(4-3) 
+        -> resultOne = 1
+        *
+        *resultTwo = hi((4*4)%3) 
+        -> hi(16%3) 
+        -> resultTwo = 5.333
+        * 
+        * resultThree = hi(hello((2*1)-4)) 
+        -> hi(hello(2-4)) 
+        -> hi(((-2 *(-2))%3)) 
+        -> hi(4%3) 
+        -> resultThree = 1.333
+        * 
+        */
+        
     </script>
 </body>
 

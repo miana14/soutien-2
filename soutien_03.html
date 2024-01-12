@@ -74,9 +74,26 @@
 
     <!-- javascript part -->
     <script type="text/javascript">
+        
 
-        // Your code here...
+        function cube(){
+            // notre fonction secondaire qui retient le calcul 
+            let number = document.getElementById("number").value;
+            let calculCube = 0;
+            if ((number >= 5) && (number <= 15)){
+                calculCube = Math.pow(number,3);
+                return calculCube;
+                // important de retourner le résultat de notre calcul 
+            } else {
+                alert("Le numéro est incorrect");
+            }
+        }
 
+        function go(){
+            // fonction principale qui va être appelée lors du click
+            displayResult("Le résultat est", cube());
+            // appel du displayResult avec les message et l'appel de notre fonction secondaire avec le calcul
+        }
     </script>
 </body>
 
